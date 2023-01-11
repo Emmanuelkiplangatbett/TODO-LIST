@@ -1,8 +1,19 @@
-import react from "react"
-import Todolist from "../component/Todo list"
+import React from "react";
+import Todolist from "../component/Todolist";
+import NavBar from "../component/NavBar"
+import Footer from "../component/Footer"
+import TodoAnalytic from "./TodoAnalytic"
 
 function Home (){
-    return
-
-    
+    return(
+        <div>
+            <NavBar/>
+            <section>
+                <Todolist/>
+            </section>
+            <Footer />
+            <TodoAnalytic/>
+        </div>
+    )
 }
+export default Home;
